@@ -43,7 +43,7 @@ python -m pip install --upgrade pip wheel setuptools
 pip install ultralytics opencv-python torch torchvision numpy pandas matplotlib tqdm PyYAML
 
 
-## 資料準備
+### 資料準備
 
 ### 下載競賽資料（Kaggle）
 ```bash
