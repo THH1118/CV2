@@ -40,7 +40,7 @@ python -m venv .venv
 source .venv/bin/activate
 
 python -m pip install --upgrade pip wheel setuptools
-pip install ultralytics opencv-python torch torchvision numpy pandas matplotlib tqdm PyYAML
+pip install ultralytics opencv-python torch torchvision numpy pandas matplotlib tqdm PyYAML```
 
 
 ## 資料準備
@@ -50,7 +50,7 @@ pip install ultralytics opencv-python torch torchvision numpy pandas matplotlib 
 # 先在本機放好 kaggle.json（API 金鑰），並設定環境變數：
 export KAGGLE_CONFIG_DIR=/path/to/your/kaggle   # Windows 可用：set KAGGLE_CONFIG_DIR=...
 kaggle competitions download -c taica-cvpdl-2025-hw-2 -p ./data
-unzip -q ./data/taica-cvpdl-2025-hw-2.zip -d ./data
+unzip -q ./data/taica-cvpdl-2025-hw-2.zip -d ./data```
 
 
 ## 專案結構
@@ -69,7 +69,7 @@ unzip -q ./data/taica-cvpdl-2025-hw-2.zip -d ./data
       │  └─ test/               # 如主辦方提供
       └─ labels/
          ├─ train1280/
-         └─ val1280/
+         └─ val1280/```
 
 
 ## 訓練
@@ -85,7 +85,7 @@ yolo detect train \
   mosaic=1.0 mixup=0.15 copy_paste=0.25 erasing=0.4 \
   degrees=10 scale=0.5 translate=0.1 close_mosaic=10 \
   pretrained=False \
-  project=runs_hw2 name=yolov9_scratch
+  project=runs_hw2 name=yolov9_scratch```
 
 
 ## 推論與 Submission
@@ -96,7 +96,7 @@ yolo detect predict \
   model=runs_hw2/detect/yolov9_scratch/weights/best.pt \
   source=./data/CVPDL_hw2/test \
   imgsz=1280 device=0 \
-  save_txt=True save_conf=True
+  save_txt=True save_conf=True```
 
 
 ## 結果摘要
