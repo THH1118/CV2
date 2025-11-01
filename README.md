@@ -3,45 +3,7 @@ CVPDL HW2 – Aerial Object Detection (YOLOv9)
 偵測 car / hov / person / motorcycle（空拍影像）。本 README 依序說明：環境安裝 → 資料整理 → 訓練 → 推論 / 產生 submission。
 最終成績：Private 0.28240、Public 0.25088。
 
-目錄
 
-環境安裝
-
-選項 A. venv（建議）
-
-選項 B. Conda
-
-資料準備
-
-下載競賽資料（Kaggle）
-
-整理成 YOLO 結構（示意）
-
-建立 data.yaml
-
-專案結構
-
-訓練
-
-推論與 Submission
-
-1) 推論（Predict）
-
-2) 產生 Submission
-
-結果摘要
-
-Validation 成績
-
-Kaggle Leaderboard
-
-僅調「推論」時的建議
-
-可重現性
-
-注意事項
-
-授權
 
 環境安裝
 
