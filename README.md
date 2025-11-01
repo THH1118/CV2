@@ -31,7 +31,7 @@
 
 > 若需 **GPU**，請依你的 **CUDA 版本**安裝相容的 `torch`/`torchvision`。可參考 PyTorch 官方安裝指引。
 
-### 選項 A. venv（建議）
+選項 A. venv（建議）
 ```bash
 python -m venv .venv
 # Windows
@@ -43,7 +43,7 @@ python -m pip install --upgrade pip wheel setuptools
 pip install ultralytics opencv-python torch torchvision numpy pandas matplotlib tqdm PyYAML
 
 
-### 資料準備
+## 資料準備
 
 ### 下載競賽資料（Kaggle）
 ```bash
